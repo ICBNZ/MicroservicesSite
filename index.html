@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Software Architecture</title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS stylesheet -->
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+          <h2> Software Architecture </h2>
+  </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+      <div class="cont">
+        <!-- Task 2: 1 - Overview - white bk -->
+        <h3> Microservices </h3>
+          <p>Micro-services is a software architecture which is made up of independent services which serve a specific function. Microservices came about with the introduction of object oriented programming and service-oriented architecture where applications then began to be built as loosely coupled feature services as opposed to one large system as before with monolithic structures. Microservices further broke these service components into small specific tasks with independently built components able to be written in any programming language and connected to it’s own separate database, utilising APIs for communication and scalable cloud infrastructures. </p>
+       </div>
+    </div>
+
+    <div class="content1">
+      <div class="cont">
+          <!-- Task 2: 2 - Main Principles -->
+          <h3>Principles</h3>
+              <h4>Failure Isolation</h4>
+              <p>As the services are independent of one another, Microservices are more resistant to failures. In the event a component fails the communication to that service can be cut, while the rest of the application continues to run. This is not the case with monolithic applications where one fault could stop the entire application running. Faults are also more easily identified within the small components and separate development teams. </p>
+
+              <h4>Decentralised</h4>
+              <p>Microservices uses different databases for the different services unlike that of monolithic systems which have a central database for all services. As each service uses its own separate database this allows them to be entirely different systems and allowing changes to be easily made to individual services.</p>
+
+              <h4>Independently Deployable</h4>
+              <p>Defining boundaries of the multiple components by encapsulation of each single function service’s details and own database so that services can be changed without affecting others. </p>
+
+              <h4>Loose Coupling</h4>
+              <p>Loose coupling involves systems where the components are separated into multiple small components with minimal dependencies. Small service components are each developed and operated independently of other services with minimal dependencies focusing on a single function, this allows the services to update and evolve without affecting or relying on the rest of the application and can be built with own programming languages. </p>
+
+
+      </div>
+    </div>
+
+  <div class="content2">
+    <div class="cont">
+        <!-- Task 3: 1 - Advantages -->
+        <h3>Advantages of Micro-services</h3>
+        <br><br>
+
+        <div id="boxes2">
+          <div class="icons">
+            <img class="coding_icon" src="img/coding_icon.png">
+          </div>
+          <div id="icons2">
+            <h4>Programming Languages</h4>
+            <p>Different programming languages and technology stacks can be used for each different service. This gives the development teams freedom to choose the best tools for that component and the independence of the services allows for the ability to easily re-write services and with no long-term commitment to technology stacks required, services can be easily updated with new technologies integrated. <p>
+          </div>
+
+          <div class="icons">
+            <img class="coding_icon" src="img/tools_icon.png">
+          </div>
+          <div id="icons2">
+            <h4>Failure Resilence</h4>
+            <p>Microservices are failure resistant, as the services are independent this allows for no single point of failure which prevents the whole application from crashing when one service is down.  </p>
+          </div>
+
+           <div class="icons">
+             <img class="coding_icon" src="img/icon-time.png">
+           </div>
+           <div id="icons2">
+             <h4>Continuous Development/ Agility</h4>
+             <p>Microservices with its small, independent services can provide continuous integration and delivery at a fast pace. Through continuous delivery with DevOps this allows services to quickly update with changes only required to be applied for that particular service, allowing the application to run as normal during the process.<br>
+             The small size of the services means they are simpler and easier to understand which aids in training new team members. They are highly maintainable and testable and easier to deploy with developers able to easily experiment and develop new features, shortening development processes to just weeks. </p>
+           </div>
+
+       <div class="icons">
+         <img class="coding_icon" src="img/money_icon.png">
+       </div>
+       <div id="icons2">
+         <h4>Low Costs/ Scaling</h4>
+         <p>
+         Change can occur at a high rate due to small independent services with faster iterations, continuous development and integration without affecting the entire application.<br>
+         Microservices also allows each service to individually scale according to their requirements and demand for the feature, which allows for accurate infrastructure needs and measurements of cost and ability to be available when demand increases, which both reduce downtime.<br>
+         With quicker to market features, more efficient code, infrastructure and cloud-based servers, costs are reduced for the business. Also, there can be increased revenue as user engagement increases with the application able to readily implement new features and improve.</p>
+       </div>
+
+    </div>
+        <h3>Disadvantages of Microservices</h3>
+          <ul>
+            <li>Some disadvantages of Microservices include duplication of data that may occur as there are separate databases for the different services.</li>
+            <li>Some services also aren’t able to be easily split into the different separate components.</li>
+          </ul>
+        </div>
+   </div>
+
+    <div class="content2_1">
+      <div class="cont">
+        <!-- Task 3: 2 - Comparison -->
+        <h3>Microservices vs Service Oriented Architecture (SOA)</h3>
+
+        <!-- Similarities -->
+        <h3>Similarities</h3>
+
+          <h4>Languages</h4>
+          <p>Both Microservices and Service Oriented architecture allow the use multiple programming languages to be used for the different services within an application. However, with SOA the development teams need to share communication mechanisms whereas MS are able to be independently deployed. </p>
+
+          <h4>Services</h4>
+          <p>Both architectures are focused on services as the main component, divided into service modules which are "black boxes" to users, as opposed to Monolithic systems.</p>
+
+          <h4>Distrubuted System</h4>
+            <p>Both architectures have distributed systems where a means of communication is needed, however the communication differs between the two.</p>
+
+      <!-- Differences -->
+      <h3>Differences</h3>
+        <h4>Size</h4>
+        <p>SOA has coarse grained feature components which can be subsystems, whereas microservices is broken down into smaller, fine grained single-task focused components.</p>
+
+        <h4>Communication</h4>
+        <p>Microservices focuses on communicating and co-ordinating as little as possible with the other teams and components whereas SOA is the opposite. Communication with microservices is through light-weight API protocols and with SOA through middleware messaging where the components need to know details about the other services. Communication with SOA happens through the Enterprise Services Bus which means if one service slows down this can slow down the entire system, whereas microservices the services are independent, and failures only affect that particular service.</p>
+
+        <h4>Decentralised</h4>
+        <p>Microservices is focused on small independent, autonomous services with minimal dependencies. Microservices focuses on bounded contexts of single units and data independant from other services and SOA is focused on component sharing. Microservices has its own database for each service, whereas SOA have a shared database, and centralised communication.</p>
+
+        <h4>Failure Isolation</h4>
+        <p>As the Service Orientated Architecture communicates through the ESB, this can be a single point of failure which can affect the application,
+          however with Microservices, there is no single point of failure as all components are separate and independant, so one service's failure doesn't affect the rest of the system.</p>
+
+          <h4>Flexiblity</h4>
+          <p>SOA have common standards and governance between components whereas Microservices offer more flexibility and freedom for teams, focusing on people and collaboration.
+            The independance of the microservice services allows for easier updating, changing and faster deployment of services without affecting the rest of the application.</p>
+
+     </div>
+    </div>
+
+    <div class="content3">
+      <div class="cont">
+        <!-- Pattern Scheme -->
+        <h3> Microservices Schema </h3>
+        <img id="scheme" src="img/scheme.png">
+        <p>Image: Microservice Architecture Richardson, C (2018) https://microservices.io</p>
+        <p> This schema depicts how a microservices application is built,
+          on the right there are small, individual services such as Billing, Passenger Management.
+          Each service has it's own separate database attached and also each service has a REST API to commuicate to the users.
+          As seen in the diagram all services are broken down into small services and independant of one another. The API gateway
+          acts as an entry point for the client which routes requests between the client to appropriate microservices,
+          multiple gateways are able to be used.</p>
+       </div>
+    </div>
+
+    <div class="content4">
+      <div class="cont">
+        <!-- Real-life Companies -->
+         <h3> Real World Examples </h3>
+         <h4> Click on the logos below to find out how these well known companies use microservices </h4>
+
+         <div class="boxes">
+           <ul>
+             <li class="one"><a style="cursor: pointer;"><img src="img/amazon-logo.png" alt="Amazon"></a></li>
+             <li class="two"><a style="cursor: pointer;"><img src="img/uber-logo.png" alt="uber"></a></li>
+             <li class="three"><a style="cursor: pointer;"><img src="img/netflix-logo.jpg" alt="netflix"></a></li>
+             <li class="four"><a style="cursor: pointer;"><img src="img/ebay-logo.png" alt="ebay"></a></li>
+           </ul>
+         </div>
+      </div>
+
+       <div class="info">
+         <div class="amazon">
+           <div class="cont">
+             <h4>Amazon</h4>
+             <p>Amazon started as a monolithic application however moved to microservices as it expanded to
+               different areas and required a larger number of developers to maintain and build it.
+               With the monolithic system, merging of changes took time and resulted in delays. With the microservices architecture, independent functions, decoupled services and cloud based scalable servers this meant Amazon could keep up with changing demands without wasting money and speed up development.</p>
+            </div>
+           </div>
+          <div class="uber">
+            <div class="cont">
+              <h4>Uber</h4>
+              <p>Ride sharing app Uber began as a tightly coupled, monolithic architecture system which contained all systems and processes for the business. However, as the business grew there were issues with scaling and development of new features which is why Uber moved to microservices which allows teams to quickly develop and deploy product features using the best updated tools.</p>
+             </div>
+           </div>
+           <div class="netflix">
+             <div class="cont">
+               <h4>Netflix</h4>
+               <p>Netflix is one of the first companies to use Microservices when it began moving to cloud based microservices in 2009 initially with non-customer based services such as movie encoding and then all services finally moved over, at this point the term microservices didn't exist. Reasons behind the move to the cloud based microservices were the fact Netflix needed to be fast, increasing demand and the need for services to be available all the time. In 2008 a missing semicolon led to database corruption and it was down for hours this led to Netflix deciding to change their system. Netflix now has an API gateway which handles around 2 billion requests per day with developers able to deploy code thousands of times a day. </p>
+              </div>
+            </div>
+           <div class="ebay">
+              <div class="cont">
+                <h4>eBay</h4>
+                <p>eBay uses microservices with more than 1000 services and development teams for each. With front end APIs and backend microservices handling tasks such as shipping. Microservices allows eBay development teams to easily update and deploy new functions with their cloud portal. </p>
+            </div>
+          </div>
+       </div>
+
+    </div>
+
+    <!-- Quiz -->
+    <div class="content5">
+      <form id="form" name="questions">
+        <div id="Q1">
+          <div class="quiz">
+            <h2> Quiz </h2>
+                <!-- Question 1 -->
+            <h4>Question 1</h4>
+            <h5>What is the name of the architecture that Netflix, Uber, Amazon and eBay started with?</h5>
+            <input id ="textbox" type="textbox" name ="question1">
+               <!-- Question 2 -->
+            <h4>Question 2</h4>
+            <h5>Select the statement that finishes this sentence..</br>
+              Microservices communicate with..</h5>
+            <input id ="radio" type="radio" name ="question2" value="Right">&nbsp;Lightweight API protocols</p><br>
+            <input id ="radio" type="radio" name ="question2" value="Wrong">&nbsp;Middleware messaging, ESB</br>
+              <!-- Question 3 -->
+            <br>
+            <h4>Question 3</h4>
+            <h5>Which of these statements is True?</h5>
+              <input id ="radio" type="radio" name ="question3" value="Right">&nbsp;Microservice components are small, task level and decentralised with minimal communication between components<br>
+              <input id ="radio" type="radio" name ="question3" value="Wrong">&nbsp;Microservice components are made up of larger, feature level services and centralised with communication from different components<br>
+              <input id ="button" type="button" value="Submit" onclick = "check_answers();">
+
+            <!-- After submit - Score/ Message -->
+            <div id="submit">
+                <ul>
+                  <li id="score"></li><br>
+                  <li id="message"></li>
+                </ul>
+            </div>
+          <input id ="answers_button" type="button" value="Answers" onclick = "view_answers();">
+        </div>
+
+        <!-- View Answers -->
+          <div id="q_answers">
+            <p>
+              Question 1: Monolithic<br>
+              Question 2: Lightweight API protocols<br>
+              Question 3: Microservice components are small, task level and decentralised with minimal communication between components<br>
+            </p>
+          </div>
+
+      </div>
+    </form>
+   </div>
+
+        <!-- Javascript  -->
+    <script src="javascript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'boldbold';
+    src: url('cunia-webfont.woff2') format('woff2'),
+         url('cunia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'muskregular';
+    src: url('musk_regular-webfont.woff2') format('woff2'),
+         url('musk_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/****** BODY            */
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ padding:0;
+ margin:0;
+ letter-spacing: 1.5px;
+ line-height:25px;
+ background-size: 100%;
+ word-wrap: break-word;
+ overflow: scroll;
+ color: black;
+}
+h1{
+  font-family: 'boldbold';
+  font-size: 3em;
+  line-height: 50px;
+}
+h2{
+  font-family: 'boldbold';
+  font-size: 40px;
+}
+h3{
+  font-family: 'muskregular';
+  font-size: 2em;
+}
+p{
+}
+h4{
+  font-family: 'muskregular';
+  font-size: 24px;
+}
+.cont{
+  padding: 2% 10% 5% 10%;
+  justify-content: center;
+}
+
+ul{
+}
+/************** HEADERS   */
+header{
+    color: #226089;
+    padding-top: 20px;
+    padding-bottom: 250px;
+    color: white;
+    text-align: center;
+    background-image: url(img/laptop.jpg);
+    background-repeat:no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+    top:0;
+    height: auto;
+    justify-content: center;
+}
+
+/*** Content */
+.content{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.content2{
+  color: #226089;
+}
+.content1{
+  color: white;
+  background-image: url(img/background.png);
+  background-repeat:no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height:300px;
+  width:100%;
+  height: auto;
+}
+.content1:hover
+{
+     transform: scale(1);
+}
+.content1 img{
+  padding-left:100px;
+  width:80px;
+}
+.content2_1{
+  color: white;
+  background-image: url(img/laptopbk2.png);
+  background-repeat:no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  width:100%;
+  min-height: 600px;
+  height:auto;
+  text-align: center;
+  justify-content: center;
+}
+.content2_1 h4, p{
+  text-align: left;
+}
+.content3{
+  color: #226089;
+  background-color: white;
+  min-height:200px;
+  width:100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+}
+.content3 img{
+  width:500px;
+}
+.content4{
+  color: #226089;
+  background-color: #f2f2f2;
+  min-height:200px;
+  width:100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+}
+.content4 img{
+  width:100px;
+}
+.content5{
+  color: #226089;
+  text-align: center;
+  width:100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+}
+/*** Companies */
+.boxes2{
+  display: inline-block;
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: center;
+  display: flex;
+}
+#box{
+  float:left;
+  width: 45%;
+}
+
+header img{
+  width:50px;
+}
+
+.amazon , .uber, .netflix, .ebay{
+  display:none;
+  color: white;
+  min-height: 300px;
+  padding-top: 5%;
+  background-color:  #f2f2f2;
+  background-image: url(img/iphone_1.jpg);
+  background-repeat:no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+ul li {
+  display: inline;
+  text-align: center;
+}
+.coding_icon{
+  margin: 0 auto;
+  width: 70px;
+}
+.iconAnimate{
+  padding-top: 5%;
+  position: relative;
+  top: 0;
+  -webkit-animation: iconAnimate 4s;
+  animation: iconAnimate 4s;
+}
+@-webkit-keyframes iconAnimate {
+0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+ 40% {-webkit-transform: translateY(-30px);}
+ 70% {-webkit-transform: translateY(-15px);}
+}
+@keyframes iconAnimate {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+ 40% {-webkit-transform: translateY(-30px);}
+ 70% {-webkit-transform: translateY(-15px);}
+}
+#boxes2{
+  display: inline-block;
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: center;
+  display: flex;
+}
+.icons{
+  opacity: 0.9;
+  width:5%;
+}
+
+#icons2{
+  width:40%;
+  padding-left: 5%;
+}
+.boxes img{
+  margin: 0.5%;
+  height: 150px;
+  width:180px;
+  object-fit: fill;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*** Quiz */
+#submit{
+  text-align: center;
+  visibility: hidden;
+  min-height: 0;
+}
+#company{
+  text-align: center;
+  visibility: hidden;
+}
+#Q1{
+  text-align: left;
+  padding: 5%;
+  margin: 5% 20% 5% 20%;
+  background-color: #F7F7FA;
+}
+#radio{
+  text-align: left;
+  padding-left: 5%;
+}
+
+#button{
+  margin-top:5%;
+  border-radius: 1px;
+  background-color:#144358;
+  color:white;
+  width:100px;
+  height:50px;
+  opacity: 0.8;
+}
+#answers_button{
+  visibility: hidden;
+  margin-top:5%;
+  border-radius: 1px;
+  background-color:white;
+  color:#144358;
+  width:100px;
+  height:50px;
+}
+#q_answers {
+  text-align: left;
+  visibility: hidden;
+}
+#q_answers p{
+  color: #b3d9ff;
+}
+#quiz{
+}
